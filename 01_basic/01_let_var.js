@@ -15,4 +15,19 @@ var : functional scope : variables accessiable with an function only
 */
 
 var x =10 ;
-var x=20;
+var x=20; //no error
+
+// let y =30;
+// let y=50 ;//error
+
+/*
+note2 :
+var : you can redeclare variables with var without error 
+let : redeclare variables with let result in syntax error
+*/
+
+console.log(a);
+var a=20;
+
+console.log(b);
+let b=20;
