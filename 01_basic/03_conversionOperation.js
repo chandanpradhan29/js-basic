@@ -1,4 +1,4 @@
-// Number() : used convert any data type to number 
+// Number() : used convert  data type to number 
 let score1 = "35";
 let score2 = "35abc";
 let score3 = true;
@@ -25,7 +25,7 @@ undefine => NaN
 true => 1 , false => 0
 */
 
-//Boolean() : used to any data type to boolean
+//Boolean() : used to convert data type to boolean
 
 let myvalue =1 ;
 let myvalue2 ="" ;
@@ -45,4 +45,13 @@ Boolean() :
 1=> true , 0=> false 
 "" => false 
 "chandan" => true
+*/
+
+let mynum = 20;
+let convertedStr = String(mynum);
+console.log(convertedStr , typeof convertedStr);
+
+/*
+String() :used to convert data type to string
+20=> 20
 */
