@@ -4,8 +4,12 @@ How data are being stored in memory and how they are accessing based of this it 
 2)non primitive data type
 
 q) interview question : 
-js is dynamically typed language or statically typed language ???
+js is dynamically typed language or statically typed language ??? : dynamically typed language we don't need to specify the type of 
+variables . 
 
 
 */
+let a = 10;
+a = "chandan";
+console.log(a);
 
