@@ -8,5 +8,10 @@ console.log(Array.isArray([1,2,3])); //false
 const name_arr = Array.from("chandan"); // convert names pass on paramater as array like ['c' ,'h' , 'a' , 'n' , 'd' , 'a' , 'n']
 console.log(name_arr);
 
-//from()
-//of()
+
+//of() :
+let a1= 10;
+let a2 =20;
+let a3 =30;
+let res = Array.of(a1,a2,a3);
+console.log(res);
