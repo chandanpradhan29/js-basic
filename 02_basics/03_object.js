@@ -6,7 +6,10 @@ const myobj = {
     city : "banglore" ,
     isLoggedin : false ,
     loginDays : ["monday" , "tuesday"] ,
-    [mysymb] : "key1"
+    [mysymb] : "key1" ,
+    callme : function() {
+        console.log("hii");
+    } 
 }
 
 //accesing proptites 
@@ -29,3 +32,4 @@ myobj.greeting = function(){
     console.log(`hello beta  ${this.name} `);
 }
 console.log(myobj.greeting());
+console.log(myobj.callme());
