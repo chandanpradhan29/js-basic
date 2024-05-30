@@ -9,6 +9,7 @@ const myobj = {
     [mysymb] : "key1"
 }
 
+//accesing proptites 
 console.log(myobj.name);
 console.log(myobj["name"]);
 //console.log(myobj.full name);//error
@@ -19,6 +20,12 @@ console.log(myobj[mysymb]);
 myobj.name ="raaj naam tho suna hoga"
 
 //freez object : we can't do any updation once object is freez 
-Object.freeze(myobj)
+// Object.freeze(myobj)
 myobj.name ="simran naam tho suna hoga"
 console.log(myobj);
+console.log("--------------------------------");
+
+myobj.greeting = function(){
+    console.log(`hello beta  ${this.name} `);
+}
+console.log(myobj.greeting());
