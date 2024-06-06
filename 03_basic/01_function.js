@@ -10,7 +10,6 @@ function addTwoNums(number1 , number2) {
     // let  result = number1 + number2
     // return result
     return number1+number2
-    
 }
 
 function loginUserMsg(username="chandu"){
@@ -22,7 +21,7 @@ function loginUserMsg(username="chandu"){
 }
 //function call 
 console.log(loginUserMsg("chandanpradhan"));
-console.log(loginUserMsg("rakul"));//undefine is logged in (when we not passsed any value)----> interview question 
+console.log(loginUserMsg("rakul"));//blank parameter -> undefine is logged in (when we not passsed any value)----> interview question 
 
 // const sum = addTwoNums(9,7);
 // console.log("sum is : ",sum);
