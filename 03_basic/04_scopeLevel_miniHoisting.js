@@ -33,7 +33,7 @@ function addTwoNos(num1 , num2) {
     return num1+num2
 }
 
-console.log(sum(10,2));
+console.log(sum(10,2)); //error : can't access sum before intilization , called as  hositing 
 const sum = function(num1,num2) {
     return num1+num2
 }
