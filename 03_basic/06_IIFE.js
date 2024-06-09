@@ -11,4 +11,4 @@
 //Prameterized IIFE
 ((name) => {
     console.log(`name is ${name} is connected`);
-  })('chandan');
+  })('chandan')
