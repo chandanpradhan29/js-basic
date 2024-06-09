@@ -41,8 +41,13 @@ const numAvg = (num)=> {
 
 // console.log(numAvg(10));
 
-const numAvg1 = (num)=>  (num/2)
+const numAvg1 = ()=>  (num/2)
 
-console.log(numAvg1(10));
+// console.log(numAvg1(10));
 
+
+//we can object to the function
+
+const takeObj = (num1 ,num2)=> ({name:"chandan"})
+// console.log(takeObj(1,2));
 
