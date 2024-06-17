@@ -78,7 +78,9 @@ const books = [
 ]
 
 // const userFilter = books.filter( (bk) => bk.category =="action" )
-const userFilter = books.filter( (bk) => bk.publish >=2000 && bk.category =="funny" )
+const userFilter = books.filter( (bk) => { 
+    return bk.publish >=2000 && bk.category =="funny"
+} )
 
 console.log(userFilter);
 
