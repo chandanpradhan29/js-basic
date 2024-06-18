@@ -34,4 +34,4 @@ const courses = [
 ]
 
 const toatlCartPrice = courses.reduce ( (acc ,item) => (acc + item.price), 0 )
-console.log(toatlCartPrice);
+console.log(toatlCartPrice);     
