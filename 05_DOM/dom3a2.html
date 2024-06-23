@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Node</title>
+</head>
+<body>
+    <script>
+        const h1 = document.createElement("h1")
+        console.log(h1);
+        h1.className = "testclass"
+        h1.id = "testid"
+        h1.style.backgroundColor = "yellow"
+        h1.style.padding = "5px 10px"
+        const mytxt = document.createTextNode("this is text written using js")
+        h1.appendChild(mytxt)
+        document.body.appendChild(h1)
+
+    </script>
+</body>
+</html>

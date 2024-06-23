@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom 3a </title>
+    <style>
+        body{
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    
+    //create Element 
+    const div = document.createElement('div')
+    console.log(div);
+    div.className ="main"
+    // div.id ="myid"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title" , "this is title set using js") // here it dosen't take referce from there  direct setattribute here only
+    div.style.backgroundColor = "green"
+    div.style.padding = "10px 20px"
+    // div.innerHTML = " this is text text set using js " // here innerhtml take refrence  from there and then override the text
+    const addTxt = document.createTextNode("this is text text set using js1")
+    div.appendChild(addTxt)
+
+    //how to attached above code into body
+    document.body.appendChild(div)
+
+</script>    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;color: aliceblue;">
+
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+    <script>
+        //way1 
+        /*
+
+        const parent = document.querySelector('.language')
+        console.log(parent);
+
+        const li =document.createElement("li")
+        console.log(li);
+        const txt = document.createTextNode("css")
+        li.appendChild(txt)
+
+        //insert li into ul 
+        parent.appendChild(li) */
+
+        //way2 
+        /*
+        function addLanaguage(languageName) {
+
+            const li = document.createElement('li')
+            li.innerHTML = `${languageName}`
+
+            //insert li into ul
+            document.querySelector('.language').appendChild(li)
+        }
+
+        addLanaguage('java')
+        addLanaguage('C++')
+        addLanaguage('Python')
+        addLanaguage('lauda lasun') */
+
+        //way3 : optimized way  
+        function optiAddLanguage(languageName) {
+
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(languageName))
+
+            //insert li into ul
+            document.querySelector('.language').appendChild(li)
+
+            
+        }
+
+        optiAddLanguage('react')
+        optiAddLanguage('css')
+
+        //Edit content  : way 1
+
+        //search which element content need to be changed 
+        const secondLang = document.querySelector('li:nth-child(2)')
+
+        //create new li and insert text to new li 
+        const newLi = document.createElement('li')
+        newLi.textContent ="next js"
+
+        //now replace 2nd element content with newli content
+        secondLang.replaceWith(newLi)
+
+
+
+        //edit : way2
+        const firstLang = document.querySelector('li:first-child')
+        firstLang.outerHTML = '<li>mongodb</li>'
+
+        //remove 
+        const lastLang = document.querySelector('li:last-child')
+        lastLang.remove()
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

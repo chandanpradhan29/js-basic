@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Revision</title>
+</head>
+<body>
+    <h1 id="h-h1">This is demo text</h1>
+    <ul class="lang">
+        <li>Java</li>
+    </ul>
+
+<script>
+    //1.target element and adding some styling
+
+    /*
+    const h1 =document.querySelector('#h-h1')
+    h1.style.color = 'red'
+    h1.style.backgroundColor = "yellow"
+    h1.style.paddingTop = "30px"
+    h1.id = "h-h1"
+    h1.className = "c1 c2"
+    h1.setAttribute('title' , 'this is title')
+    h1.setAttribute('width' , '50px')    */
+
+    //2 .create element using js 
+    const div = document.createElement('div')
+    div.appendChild(document.createTextNode("this is div created using js"))
+    document.body.appendChild(div)
+
+    div.className = 'divcls cls2'
+    // console.log(div);
+
+    //3 . insert li elements into the parent elements 
+    optimAddLang = (addlang) =>{
+        //parent 
+        const ul = document.querySelector('.lang')
+
+        //creaed new li and adding text on it
+        const newli = document.createElement('li')
+        newli.appendChild(document.createTextNode(addlang))
+
+        //insert newli into the parent ul 
+        ul.appendChild(newli)
+
+        console.log("added new li : " ,newli.innerText);
+    }
+
+    optimAddLang('C++')
+    optimAddLang('Python')
+    optimAddLang('Go Lan')
+
+    //4.Edit element way1 (easy way) || not recoomended
+    const firstChild = document.querySelector('li:first-child')
+    firstChild.outerHTML = '<li>Javascript</li>'
+
+    //4. edit way2 
+    /*
+    const secondChild = document.querySelector('li:nth-child(2)')
+    
+    //creat  new li and insert textNode to it 
+    const newli = document.createElement('li')
+    newli.appendChild(document.createTextNode('Rubby'))
+
+    //now insert into the parent 
+    secondChild.appendChild(newli) */
+
+    
+    
+    //5 : remove
+    // document.querySelector('li:nth-child(1)').remove()
+    
+
+
+    
+
+</script>
+</body>
+</html>
