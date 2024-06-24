@@ -3,7 +3,9 @@
 ## Project Links 
 [click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
-## Project1 Solution
+## Project Solution
+
+## Project 1 : Color Changer box
 
 ```html
 <!DOCTYPE html>
