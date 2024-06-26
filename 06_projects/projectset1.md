@@ -229,3 +229,88 @@ form.addEventListener('submit', function (e) {
 ```
 
 ## Project3 Solutions 
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <style>
+      nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color: #eee;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px #aaa;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+}
+
+nav a[aria-current='page'] {
+  color: #000;
+  background-color: #d4d4d4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  color: white;
+}
+
+#clock {
+  background-color: rgb(222, 99, 28);
+  color: white;
+  padding: 20px 100px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+body {
+  background-color: rgb(23, 14, 14);
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+    </nav>
+
+    <div class="container">
+      <span id="txt">Your Local Time</span>
+      <div id="clock"></div>
+    </div>
+
+    <script src="external.js"></script>
+  </body>
+</html>
+
+```
+
+``` javascript
+const clock = document.querySelector('#clock');
+
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+```
