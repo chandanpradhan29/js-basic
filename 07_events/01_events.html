@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: white;
+        }
+
+        #images{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h2>images</h2>
+    <div>
+        <ul id="images">
+        <li>
+            <img src="img1.jpg" width="200px" alt="" id="photoshoot">
+        </li>
+
+        <li>
+            <img src="img2.jpg" width="200px" alt="" id="japan">
+        </li>
+
+        <li>
+            <img src="img3.jpg" width="200px" alt="" id="river">
+        </li>
+
+        <li>
+            <img src="img4.jpg" width="200px" alt="" id="owl">
+        </li>
+
+        <li>
+            <img src="img5.jpg" width="200px" alt="" id="prayer">
+        </li>
+
+        <li><a href="https://google.com" id="google">Google</a></li>
+
+        </ul>
+    </div>
+<script>
+    // document.querySelector('#owl').onclick = function() {
+    //     alert('owl')
+    // }
+
+    document.querySelector('#owl').addEventListener('click' ,function(e){
+        // alert('own image clicked again')
+        console.log(e);
+    } )
+</script>
+</body>
+
+</html>
