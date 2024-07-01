@@ -52,10 +52,37 @@
     //     alert('owl')
     // }
 
+    /*
+
+    document.querySelector('#images').addEventListener('click' ,function(e){
+        // alert('own image clicked again')
+        console.log('clicked inside the ul ');
+    } , false)
+
     document.querySelector('#owl').addEventListener('click' ,function(e){
         // alert('own image clicked again')
-        console.log(e);
-    } )
+        console.log('owl clicked');
+    } , false)
+
+    document.querySelector('#google').addEventListener('click' ,function(e){
+        e.preventDefault()
+        e.stopPropagation()
+        console.log('google clicked');
+    } , false)
+     */
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.id);
+         console.log(e.target.tagName); 
+            
+        if(e.target.tagName == 'IMG') {
+            
+            let imagesRemove = e.target.parentNode;
+            imagesRemove.remove()
+        }
+        
+    })
+    // imagesRemove.parentNode.removeChild()
 </script>
 </body>
 
